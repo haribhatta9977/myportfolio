@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harry - Developer Portfolio</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">Harry<span class="highlight">.Portfolio</span></div>
+        <div onclick="showmenu()" class="menu-toggle" id="menu-toggle" >&#9776
+          
+          
+          </div>
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#myEducation">Education</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero" id="Home">
+      <div class="hero-text">
+        <h1>
+          Hi, I'm <span class="highlight">Harry</span>
+          <div id="address">From Chitwan Nepal</div>
+        </h1>
+        <p>I’m a passionate <span id="element"></span></p>
+        <button class="btn">Download CV</button>
+        <button class="btn">Hire Me </button>
+      </div>
+      <img src="./img/harry.png" alt="Harry's Photo" />
+    </section>
+
+    <hr />
+    <!-- About section  -->
+    <section class="secondsection" id="About">
+
+      <div class="about">
+        <div class="about-left">
+          <img src="./img/about-img.jpg" alt="about image" />
+        </div>
+        <div class="about-right">
+          <h1>About Me</h1>
+          Hi! I’m <span>Harry</span>, a BSc CSIT student with a growing passion for web
+          development. I enjoy creating clean, responsive, and user-friendly
+          websites using HTML, CSS, and JavaScript. Currently, I’m learning
+          React and exploring how modern web technologies can make life easier
+          and more creative. My goal is to become a skilled full-stack developer
+          and work on projects that solve real-world problems while improving
+          user experience.
+        </div>
+      </div>
+    </section>
+       <hr />
+    <!-- Education section -->
+ <main id="myEducation">
+  <section class="thirdsection">
+    <h1>Education</h1>
+
+    <div class="education">
+      <div class="education-item">
+        <h2>BSc CSIT</h2>
+        <p>2022 - Present</p>
+        <p>Bhaktapur Multiple Campus, Bhaktapur</p>
+      </div>
+
+      <div class="education-item">
+        <h2>Higher Secondary Education</h2>
+        <p>2019 - 2021</p>
+        <p>New Capital College, Chitwan</p>
+      </div>
+
+      <div class="education-item">
+        <h2>Secondary Education</h2>
+        <p>2017 - 2019</p>
+        <p>Shree Amarawati Secondary School, Dhading</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+     <hr>
+     <!-- skills section -->
+      <section class="fourthsection"id="Skills">
+        <div class="skills">
+        <h1>Skills</h1>
+
+            <div class="skill-html"> 
+               <h4>HTML</h4>
+              <h6></h6>
+              <h4>80%</h4>
+                
+            </div>
+            <div class="skill-css"> 
+              
+                 <h4>CSS</h4>
+                <h6></h6>
+                <h4>70%</h4>
+            </div>
+            <div class="skill-js">
+                <h4>Js</h4>
+                <h6></h6>
+                <h4>60%</h4>
+                 </div>
+            <div class="skill-react"> 
+                <h4>React</h4>
+                <h6></h6>
+                <h4>40%</h4>
+            </div>
+      </section>
+    <hr />
+    <!-- contact section -->
+    <section class="fifthsection" id="Contact">
+  <h1>Contact Me</h1>
+
+  <div class="contact-right">
+    <form action="">
+      <input type="text" placeholder="Your Name" required /><br />
+      <input type="email" placeholder="Your Email" required /><br />
+      <textarea rows="5" placeholder="Your Message" required></textarea><br />
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <!-- footer section -->
+  <footer>
+    <p>© 2025 <span>Harry</span>. All Rights Reserved.</p>
+    <div class="footer-social">
+      <a href="https://facebook.com/HarryBhatta" target="_blank"
+        ><i class="fa-brands fa-facebook"></i
+      ></a>
+      <a href="mailto:HarryBhatta0000@gmail.com"
+        ><i class="fa-solid fa-envelope"></i
+      ></a>
+      <a href="https://instagram.com/HarryBhatta" target="_blank"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+      <a href="https://wa.me/9819264210" target="_blank"
+        ><i class="fa-brands fa-whatsapp"></i
+      ></a>
+      <a href="https://t.me/HariBhatta" target="_blank"
+        ><i class="fa-brands fa-telegram"></i
+      ></a>
+    </div>
+  </footer>
+</section>
+
+    <script>
+     function showmenu(){
+        var menutoggle=document.getElementById("menu-toggle");
+        var nav=document.querySelector("nav ul");
+        menutoggle.classList.toggle('active');
+        nav.classList.toggle('active');
+      }
+      var typed = new Typed("#element", {
+        strings: ["Web Developer"],
+        typeSpeed: 60,
+        backSpeed: 40,
+        loop: true,
+      });
+      
+    </script>
+  </body>
+</html>

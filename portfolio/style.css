@@ -1,0 +1,452 @@
+html {
+  scroll-behavior: smooth;
+}
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 80px;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #00ffff;
+      text-shadow: 0 0 15px #00ffff;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+    }
+     
+
+    nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
+    }
+    .menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    color: #00ffff;
+  }
+   nav ul.active {
+      max-height: 400px;
+    }
+  nav ul {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    width: 200px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  nav ul.active {
+    transform: translateX(0);
+  }
+  nav ul li {
+    margin: 15px 0;
+    text-align: center;
+  }
+}
+  
+ 
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 100px 10%;
+      margin:30px 0;
+      gap: 50px;
+      flex-wrap: wrap;
+     /* min-height: 90vh; */
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+      font-size: 1.8rem;
+    }
+ .hero-text #address{
+    font-size: 1rem;
+ }
+    .hero-text h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .hero-text button.btn {
+      background: #00ffff;
+      color: #000;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1rem;
+      margin: 10px 10px 30px 0;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .highlight {
+      color: #00ffff;
+      text-shadow: 0 0 15px #00ffff;
+    }
+
+    #element {
+      color: #ff6ec7;
+      text-shadow: 0 0 10px #ff6ec7;
+    }
+
+    .hero img {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #c0ebeb;
+      box-shadow: 0 0 13px #cdefef;
+    }
+
+   
+
+    /* Section Divider */
+    hr {
+      width: 70%;
+      margin: 70px auto;
+      border: none;
+      height: 1px;
+      background: linear-gradient(to right, transparent, #00ffff, transparent);
+    }
+    /* About Section */
+    .secondsection{ 
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+
+        text-align:center;
+        /* min-height: 100vh; */
+
+    }
+    
+    .about{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* margin-top: 380px; */
+        min-height: 100vh;
+        /* flex-wrap: wrap; */
+    }
+    @media (max-width: 500px) {
+      .about {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }}
+    .about .about-left img{
+        width:300px;
+        height:300px;
+        border-radius: 10px;
+        object-fit: cover;
+        box-shadow: 0 0 15px #00ffff;
+    }
+    .about .about-right{
+        width: 60%;
+    }
+    .about .about-right h1{
+        display: flex;
+        justify-content: left;
+        margin-bottom: 20px;
+    }
+    .about .about-right span{
+        color:#00ffff;
+    }
+
+
+/* Main section styling */
+#myEducation {
+  height: auto;
+  padding: 60px 0;
+  background-color: #0a0a0a; /* dark background */
+  color: #ffffff;
+}
+
+/* Section title */
+.thirdsection h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+  margin-bottom: 40px;
+}
+
+/* Education container */
+.education {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Each education card */
+.education-item {
+  border: 2px solid #00ffff;
+  padding: 20px;
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00ffff;
+  text-align: center;
+  background-color: rgba(0, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.education-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #00ffff;
+}
+
+/* Headings and text inside cards */
+.education-item h2 {
+  color: #00ffff;
+  margin-bottom: 10px;
+}
+
+.education-item p {
+  color: #e0e0e0;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Responsive layout for small screens */
+
+
+   /* skils section     */
+   .fourthsection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align:center;
+   }
+   .skills{
+    border:#00ffff 2px solid;
+    padding:20px;
+    width: 50%;
+    border-radius: 1.5px solid #d0e3e3 ;
+    box-shadow: 0 0 10px #00ffff;
+    margin: 190px auto;
+    height: auto;
+
+   }
+   @media (max-width: 768px) {
+    .skills{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+   }
+   .skill-html {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+   
+   }
+   .skill-html h6{
+    background-color: #ff6ec7;
+    width: 80%;
+    height: 5px;
+    border-radius: 1px;
+   }
+.skill-css {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+   
+   }
+   .skill-css h6{
+    background-color: #ff6ec7;
+    width: 60%;
+    height: 5px;
+    border-radius: 1px;
+   }
+   .skill-js {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+   
+   }
+   .skill-js h6{
+    background-color: #ff6ec7;
+    width: 55%;
+    height: 5px;
+    border-radius: 1px;
+   }
+.skill-react {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+   
+   }
+   .skill-react h6{
+    background-color: #ff6ec7;
+    width: 35%;
+    height: 5px;
+    border-radius: 1px;
+   }
+/* contact section  */
+/* Contact Section */
+#Contact {
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#Contact h1 {
+  font-size: 2.5rem;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+  margin-bottom: 40px;
+}
+
+/* Contact Form */
+.contact-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-right form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-right input,
+.contact-right textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #00ffff;
+  background: transparent;
+  color: white;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.contact-right input::placeholder,
+.contact-right textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-right input:focus,
+.contact-right textarea:focus {
+  box-shadow: 0 0 15px #00ffff;
+  border-color: #00ffff;
+}
+
+/* Send Button */
+.contact-right button {
+  background-color: #00ffff;
+  color: #000;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-right button:hover {
+  background-color: #02e0e0;
+  transform: scale(1.05);
+}
+
+/* Footer Section */
+footer {
+  margin-top: 50px;
+  padding: 20px 10px;
+  border-top: 2px solid #00ffff;
+}
+
+footer p {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+footer span {
+  color: #00ffff;
+  font-weight: bold;
+}
+
+/* Social Icons */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-social a {
+  color: #00ffff;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  #Contact h1 {
+    font-size: 2rem;
+  }
+
+  .contact-right form {
+    width: 90%;
+  }
+}

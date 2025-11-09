@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry-Developer portfolio</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(0,0,33);
+            color:white;
+            font-family: poppins;
+        }
+        nav{
+            display: flex;
+            justify-content:space-around;
+            align-items:center;
+            height:80px ;
+            background-color:rgb(8, 8, 245) ;
+
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin:0 20px
+        }
+        nav ul li a{
+            text-decoration: none;
+            color:white;
+            font-size:1.2rem;
+        }
+        nav ul li a:hover{
+            color:rgb(153,153,226);
+            font-size:1.1rem;
+            transition: 0.001s;
+        }
+        .left{
+            font-size:2rem;
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            margin:39px 0;
+            height: 63vh;
+        }
+        .firstsection >div{
+            width:30%;
+
+        }
+        .leftsection{
+            font-size:2.5rem;
+            margin: 50px 0;
+        }
+        .leftsection #pass{
+            font-size: 1.7rem;
+        }
+        .leftsection .purple{
+            color:rgb(201, 156, 244)
+        }
+        .leftsection #element{
+            color: rgb(201, 156, 244);
+            font-size:2.4rem
+        }
+        .rightsection img{
+            width:80%;
+            height:auto;
+            border-radius:50%;
+        }
+        hr{
+            border: 1px solid rgb(153,153,226);
+            height: 1.2px;
+            background-color: red;
+            margin: 80px 50px
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Harry portfolio</div>
+        <div class="right">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Education</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi,My name is<span class="purple"> Harry</span><div id="pass">
+                    I am a passionate<div></div>
+                    <span id="element"></span>
+
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="./img/harry.png" alt="harry photo" />
+                
+            </div>
+        </section>
+        <hr id="hr"/>
+        <div class="secondsection">
+            <h1>Past experience</h1>
+        </div>
+    </main>
+</body>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <script>
+    var typed = new Typed('#element', {
+      strings: [ 'Learners','Designer.','<i>Web</i> Developer.'],
+      typeSpeed: 50,
+    });
+  </script>
+</html>
